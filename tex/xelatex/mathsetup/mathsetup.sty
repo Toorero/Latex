@@ -1,0 +1,26 @@
+\ProvidesPackage{mathsetup}
+
+\RequirePackage{amssymb}
+\RequirePackage{mathtools}%\RequirePackage{amsmath}
+\RequirePackage{centernot}
+\RequirePackage{gensymb}
+\RequirePackage{bm}
+
+\RequirePackage{xunicode}
+\RequirePackage{xltxtra}
+
+\RequirePackage{unicode-math}
+
+% import math operators like \rk \End ...
+\RequirePackage{mathops}
+
+%\setmathfont{XITS Math}
+\setmathfont{Latin Modern Math}
+\setmathfont[range={\mathscr,\mathbfscr, \setminus}]{XITS Math} %TODO: fix \setminus
+
+\renewcommand{\thefootnote}{\alph{footnote}}
+
+\RequirePackage{enumerate}
+\newenvironment{fallunterscheidung}[1][1]{\begin{enumerate}[\textsc{Fall} #1:]}{\end{enumerate}}
+
+
