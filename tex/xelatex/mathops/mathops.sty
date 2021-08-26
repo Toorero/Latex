@@ -1,0 +1,67 @@
+\ProvidesPackage{mathops}
+
+\RequirePackage{mathtools}
+\RequirePackage{enumerate}
+\RequirePackage{xparse}
+
+% general commands
+\newcommand{\qed}{\hfill\ensuremath{\square}}
+\newcommand{\addition}[1][Bemerkung]{\underline{#1:}~}
+\newenvironment{case}[1][1]{\begin{enumerate}[\textsc{Fall} #1:]}{\end{enumerate}}
+
+
+% Eigenwerte
+\DeclareMathOperator{\spec}{spec}
+\DeclareMathOperator{\tr}{tr}
+
+% Matrizen
+\DeclareMathOperator{\1}{\mathbb{1}}
+\DeclareMathOperator{\diag}{diag}
+
+% besondere Funktionen/Funktionsklassen (LA)
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Hom}{Hom}
+
+\DeclareMathOperator{\Orth}{O}
+\DeclareMathOperator{\SO}{SO}
+
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+
+\DeclareMathOperator{\Bild}{Bild}
+
+\DeclareMathOperator{\Fix}{Fix}
+
+\DeclareMathOperator{\Mot}{Mot}
+\DeclareMathOperator{\Aff}{Aff}
+
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\df}{def}
+
+% Mengen
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\Q}{\mathbb{Q}}
+%\DeclareMathOperator{\C}{\mathbb{C}}
+
+% Norm
+\newcommand{\supN}[1]{\ensuremath{ \left\| #1 \right\|_\infty }} %supremum norm
+
+% Reihen
+\newcommand{\reihe}[1][a_k\ ]{\ensuremath{\displaystyle \sum_{k=1}^{\infty} #1}}
+\newcommand{\nreihe}[1][a_k\ ]{\ensuremath{\displaystyle \sum_{k=0}^{\infty} #1}}
+
+% Riemansche Summe und Taylor Polynom
+\NewDocumentCommand{\tpol}{ O{n} O{x_0} O{f} O{x}}{\ensuremath{ (T_{#2}^{#1} #3)(#4) } }
+\NewDocumentCommand{\rsum}{ O{f} O{Z} O{\xi} }{\ensuremath{S_{#2,#3}(#1)}}
+
+% trigonom
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+
+
+
