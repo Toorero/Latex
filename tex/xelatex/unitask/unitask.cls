@@ -204,6 +204,7 @@
 		\ifprefixtasknr\IfValueTF{#4}{#4}{\@taskprefix}\fi\IfValueTF{#3}{#3}{\arabic{@tasknr}}%
 	}%
 	\paragraph{{\large #2\ \IfValueTF{#3}{#3}{\arabic{@tasknr}}}~}
+	\belowpdfbookmark{#2\ \IfValueTF{#3}{#3}{\arabic{@tasknr}}}{task\the@tasknr}
 }{}
 
 %%% write ptable.tex so in the next compile we can access the saved tasks
